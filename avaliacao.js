@@ -102,10 +102,12 @@ button.addEventListener('click', function () {
 else {
     resultado.textContent = `O aluno ${nome} tirou ${media.toFixed(1)}, portanto está reprovado.`
 }
-div.appendChild(resultado);
 });
 
-const resultado = document.createElement("h3");
+const resultado = document.createElement("div");
+resultado.style.backgroundColor = `lightgray`;
+resultado.style.border = `2px`;
+div.appendChild(resultado);
 
 const baixo = document.createElement("footer")
 baixo.style.display = `flex`;
